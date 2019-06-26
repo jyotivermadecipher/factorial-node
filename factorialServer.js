@@ -19,6 +19,6 @@ app.get('/', (req, res) => {
 
 });
 
-app.listen(4204, () => {
+app.listen(process.env.PORT || 9204, () => {
     console.log("Server started successfully!");
 })
